@@ -1,0 +1,127 @@
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+
+    .video-title {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+
+    .video-author,
+    .video-stats {
+        font-size: 14px !important;
+    }
+}
+
+.container {
+    column-gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+}
+
+.video-thumbnail {
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.duration {
+    background-color: black;
+    bottom: 12px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    position: absolute;
+    right: 4px;
+}
+
+.channel-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 10px;
+}
+
+.channel-tooltip-container {
+    display: inline-block;
+    position: relative;
+}
+
+.channel-profile-pic {
+    border-radius: 50%;
+    height: 36px;
+    object-fit: cover;
+    width: 36px;
+}
+
+.channel-tooltip-container:hover .channel-tooltip {
+    opacity: 1;
+}
+
+.channel-tooltip {
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    top: 50px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    opacity: 0;
+    padding: 12px;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity 0.15s;
+    width: 200px;
+    z-index: 300;
+}
+
+.channel-tooltip-profile {
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 8px;
+}
+
+.channel-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.channel-subscribers {
+    font-size: 14px;
+}
+
+.video-title-link {
+    color: black;
+    text-decoration: none;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-author-link {
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+}
+
+.video-author,
+.video-stats {
+    color: rgb(70, 70, 70);
+    font-size: 12px;
+}
+
+.video-author {
+    margin-bottom: 5px;
+}
